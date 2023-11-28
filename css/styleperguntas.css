@@ -1,0 +1,116 @@
+:root {
+    --color-primary: #269fe6;
+    --color-primary-hover: #2086c2;
+    --color-primary-dark: #13141f;
+    --color-primary-dark-hover: #212336;
+    --color-primary-light: #d4ecfa;
+    --color-primary-light-hover: #bdd8e7;
+
+    --color-white: #fff;
+    --color-black: #000;
+
+    --color-dark-text: #444;
+    --color-info-light: #cce5ff;
+    --color-debug-light: #cce5ff;
+    --color-success-light: #d4edda;
+    --color-alert-light: #fff3cd;
+    --color-warning-light: #fff3cd;
+    --color-error-light: #f8d7da;
+
+    --color-info-dark: #4d86c4;
+    --color-debug-dark: #4d86c4;
+    --color-success-dark: #4a9c5d;
+    --color-alert-dark: #927f40;
+    --color-warning-dark: #927f40;
+    --color-error-dark: #da525d;
+
+    --color-gray-0: #f9f9f9;
+    --color-gray-1: #e0e0e0;
+    --color-gray-2: #c7c7c7;
+    --color-gray-3: #aeaeae;
+    --color-gray-4: #959595;
+    --color-gray-5: #7d7d7d;
+    --color-gray-6: #646464;
+    --color-gray-7: #4b4b4b;
+    --color-gray-8: #323232;
+    --color-gray-9: #191919;
+
+    --font-primary: sans-serif;
+    --font-headings: 'Roboto Slab', serif;
+
+    --spacing-gutter-medium: 3rem;
+    --spacing-gutter-large: 4rem;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-headings);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--color-gray-0);
+} 
+
+html {
+    font-size: 62.5%;
+    /* Realizando a conversão para trabalhar com rem */
+}
+
+body {
+    font-size: 1.6rem; 
+    font-family: var(--font-primary);
+    color: var(--color-dark-text);
+    background-color: var(--color-gray-0);
+}
+
+.container {
+    max-width: 60rem; /* Reduzi a largura para melhorar a leitura */
+    margin: 10% auto; /* Reduzi a margem superior */
+    padding: var(--spacing-gutter-medium);
+    border: 0.3rem solid var(--color-black);
+    background-color: var(--color-white);
+}
+
+.container-tittle {
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: var(--font-headings);
+}
+
+.container-questions {
+    padding: 2rem 0;
+}
+
+.alternativas {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--color-primary-hover);
+}
